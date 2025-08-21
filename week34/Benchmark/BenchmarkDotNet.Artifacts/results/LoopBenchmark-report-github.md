@@ -7,9 +7,9 @@ Intel Core Ultra 7 155H 1.40GHz, 1 CPU, 22 logical and 16 physical cores
 
 
 ```
-| Method             | Mean | Error | Rank |
-|------------------- |-----:|------:|-----:|
-| SumWithForeachLoop |   NA |    NA |    ? |
+| Method         | Mean | Error | Rank |
+|--------------- |-----:|------:|-----:|
+| SumWithForLoop |   NA |    NA |    ? |
 
 Benchmarks with issues:
-  LoopBenchmark.SumWithForeachLoop: DefaultJob
+  LoopBenchmark.SumWithForLoop: DefaultJob
