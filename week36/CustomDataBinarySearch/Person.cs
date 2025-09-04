@@ -35,6 +35,23 @@ public class Person : IComparable<Person>
 
     public override string ToString() => $"FirstName: {FirstName}, LastName: {LastName}, Age: {Age}";
 }
+public class LastNameComparer : IComparer<Person>
+{
+    public int Compare(Person? x, Person? y)
+    {
+        if (ReferenceEquals(x, y)) 
+            return 0;
+        
+        if (x == null) 
+            return -1;
+        
+        if (y == null) 
+            return 1;
+        
+        return string.Compare(x.LastName, y.LastName, StringComparison.InvariantCultureIgnoreCase);
+    }
+}
+
 
 public class Person2
 {
@@ -46,7 +63,7 @@ public class Person2
 }
 
 
-public class LastNameComparer : IComparer<Person2>
+public class LastNameComparer2 : IComparer<Person2>
 {
     public int Compare(Person2? x, Person2? y)
     {

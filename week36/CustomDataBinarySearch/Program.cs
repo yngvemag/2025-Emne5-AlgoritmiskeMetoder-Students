@@ -1,8 +1,8 @@
 ﻿
 using CustomDataBinarySearch;
 
-//TestPeople();
-TestPeople2();
+TestPeople();
+//TestPeople2();
 
 static void TestPeople()
 {
@@ -27,7 +27,13 @@ static void TestPeople()
 
     int idx = Array.BinarySearch(
         people,
-        new Person() {FirstName = "", LastName = "Hansen", Age = 0});
+        new Person()
+        {
+            FirstName = "", 
+            LastName = "hansen", 
+            Age = 0
+        },
+        new LastNameComparer());
     
     Console.WriteLine(
         idx >= 0
@@ -60,7 +66,7 @@ static void TestPeople2()
     int idx = Array.BinarySearch(
         people,
         new Person2() { LastName = "Hansen", FirstName = "" , Age = 0},
-        new LastNameComparer());
+        new LastNameComparer2());
     
     Console.WriteLine(
         idx >= 0
