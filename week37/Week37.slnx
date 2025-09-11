@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="BinaryTree\BinaryTree.csproj" Type="Classic C#" />
+  <Project Path="SortAlgorithms/SortAlgorithms.csproj" />
+</Solution>
