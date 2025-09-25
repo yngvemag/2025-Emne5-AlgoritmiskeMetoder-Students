@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="SortedListDemo/SortedListDemo.csproj" />
+  <Project Path="SpanDemo\SpanDemo.csproj" Type="Classic C#" />
+  <Project Path="TaskAndMemoryDemo\TaskAndMemoryDemo.csproj" Type="Classic C#" />
+</Solution>
